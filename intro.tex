@@ -1,0 +1,16 @@
+This project focuses on the behavior of a no-moving-parts check valve designed by Nikola Tesla, also known as Tesla valve under different conditions and configurations. Particularly, we will be focusing on incompressible viscous flow through a valvular conduit. ANSYS Fluent will be used as the means of simulation. \\
+
+This valvular conduit allows the fluid flow to pass through very easily in one direction while resisting significantly to flows in the other direction. This feature of the geometry allows it to be used in various applications such as flow control, mixing fluid streams and microfluidic applications. The design is aimed to cause higher pressure drops in one direction than the other. The ratio of the pressure drops in two directions is called diodicity and is calculated as follows:
+\begin{equation}
+    Di = \frac{\Delta p_r}{\Delta p_f}
+\end{equation}
+
+Also, throughout this project the studies of Truong et al \cite{truong} and Nguyen et al \cite{nguyen_abouezzi_ristroph_2021} will be referenced for optimization information.\\
+
+In the first task forward flow for laminar flow is analyzed and the development of the boundary layer is shown using data and velocity profiles from different cross sections Later on, the solution is validated by comparing it with an analytical solution known as the \textbf{Couette solution}. This is of course valid when the flow is fully developed. \\
+
+Following this, task two focuses on the optimization of the straight line segment on the valvular conduit. A relation between the Reynolds number and optimum length will be derived by fitting curves to our data and will be compared with the equations provided by the other studies. Simulations will be conducted for different Reynolds numbers, lengths and directions of which the diodicities will be calculated for each case and plotted. Later on, using the optimized values, a new simulation will be conducted to test the diodicity. \\
+
+For the last part, unlike the work done before, a three dimensional analysis will be conducted using two different turbulence models, them being $k - \epsilon$ and $k - \omega$ models. The optimal design parameters will be used that were derived from previous tasks. The discrepancies between the two models will be compared and discussed along with the diodicity value obtained in this step. \\
+
+\textbf{\textit{Keywords:}} CFD, internal flow, Tesla valve.
